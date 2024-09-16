@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Sourabh Bajaj (Adapted for Phong Thanh Bui)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Resume headings
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% Subheadings
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% Resume list commands
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/phong-thanh-bùi-1867b628a}{\Large Phong Thanh Bui}} & Email: \href{mailto:phongthanhbuiit@gmail.com}{phongthanhbuiit@gmail.com}\\
+  \href{https://www.linkedin.com/in/phong-thanh-bùi-1867b628a}{LinkedIn} & Mobile: \href{tel:+84967704979}{(+84)-967-704-979} \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ademax JSC - DIGITAL TRANSFORMATION SOLUTIONS CENTER}{Ho Chi Minh City, VN}
+      {Software Engineer, Project Owner, Pre-sales Engineer, UX/UI}{July 2021 -- July 2024}
+      \resumeItemListStart
+        \resumeItem{DeepSearch - Intelligent Search and Document Digitization Software}
+          {Developed the entire search interface, digitization, system administration, etc. with Angular applications}
+        \resumeItem{DeepSpelling - Spell Check Software}
+          {Built the entire AI-powered spell-check interface, proficiently using DOM to construct spell-check functions similar to Grammarly, while maintaining document formatting and other features. Technologies used: VueJS, NuxtJS, UnoCss. Additionally, developed Word add-ins with C\#.}
+        \resumeItem{DeepDocs - Document Digitization, Storage, and Exploitation Software}
+          {Designed system compliant with state digitization regulations (Circular 20/2019/TT-BNV). Built all interface and supported database modifications from DeepSearch. Designed system integration with VNPT's 1Gate software. Developed system to achieve information security certification. Technologies used: Vue 3, Nuxt 3, Tailwindcss, Django, ElasticSearch, MySQL.}
+        \resumeItem{DeepContract - Enterprise Contract Digitization Software}
+          {Designed system and built interface tailored for enterprise digitization needs, based on DeepDocs. Technologies used: Vue 3, Nuxt 3, Tailwindcss, Django, ElasticSearch, MySQL.}
+        \resumeItem{Project Owner}
+          {Led teams of 3-5 people. Responsible for product quality (excluding AI models). Assisted in AI model quality assurance. Gathers customer requirements and ensured product alignment with customer needs. Experienced in writing technical documentation for project bidding and intellectual property registration.}
+        \resumeItem{Pre-sales Engineer}
+          {Conducted demos, technical analysis, and software explanations. Supported sales team in customer meetings. Trained sales team and customer on software products. Provided support sales partner software such as Ecabinet, sDoc from GDT (Quy Nhon, Binh Dinh), and Text to speech from AIMed (Hanoi).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dai Phat Solutions Technology}{Ho Chi Minh City, VN}
+      {Fullstack Developer}{Sept 2020 -- Oct 2021}
+      \resumeItemListStart
+        \resumeItem{JeeHR - Human Resource Management}
+          {Maintained product, updated maternity leave, job transfer, and tour guide features. Implemented attendance tracking via Hanet camera using Webhook. Added email and Zalo OA notifications.}
+        \resumeItem{JeeComment}
+          {Developed nested comment feature with MongoDB as the database.}
+        \resumeItem{JeeAccount}
+          {Built frontend and backend for account management across the JeeHR system. Developed using Microservices architecture. Designed additional database for customer information storage from JeeCustomer.}
+        \resumeItem{JeeCustomer}
+          {Developed customer management software. Non-Microservices architecture, interfacing only with JeeAccount. Designed to ensure data synchronization between JeeAccount and JeeCustomer.}
+        \resumeItem{Technologies Used}
+          {Angular, .Net, MS SQL, MongoDB.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DXC Technology}{Ho Chi Minh City, VN}
+      {AI Intern}{Feb 2020 -- Apr 2020}
+      \resumeItemListStart
+        \resumeItem{Chatbot Development}
+          {Researched and created AI models for chatbot functionality.}
+        \resumeItem{Voice and Vision}
+          {Developed voice recognition and image-based attendance solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FPT Software}{Ho Chi Minh City, VN}
+      {Java Backend Intern}{May 2019 -- Aug 2019}
+      \resumeItemListStart
+        \resumeItem{Human Resource Management System}
+          {Developed Human Resources Management Software with a 10-person team. Responsible for deployment and weekly Monday morning reports to mentor, received HR feedback and updated product accordingly}
+        \resumeItem{Technologies Used}
+          {Java, Spring Framework, Spring MVC, JSP, Servlet, MongoDB.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ton Duc Thang University}{Ho Chi Minh City, VN}
+      {Bachelor of Science in Computer Science; GPA: 3.2}{July 2016 -- July 2024}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{DeepChat}
+      {Developed the UI/UX for an intelligent document digitization and search tool with LLM integration and will update features similar to GPT Actions. \href{https://www.figma.com/design/I82AONJnuQOBZIUS6y41YZ/Ademax-Sora?node-id=36-9828&m=dev}{Link Figma}}
+  \resumeSubHeadingListEnd
+
+%-----------REFERENCE-----------------
+\section{Reference}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Assoc. Prof Le Anh Cuong}{Digital Transformation Solutions Center - Ademax JSC}
+      {Chief Technology Officer (CTO)}{Email: cuong.le@ademax.com.vn/leanhcuong@tdtu.edu.vn}
+
+    \resumeSubheading
+  {M.Sc – Ph.D. Student Vu Dinh Hong}{Digital Transformation Solutions Center - Ademax JSC}
+  {Lead technical Engineer}{Email: vudinhhong@tdtu.edu.vn}
+  \resumeSubHeadingListEnd
+
+\end{document}
